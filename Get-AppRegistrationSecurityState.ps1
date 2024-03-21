@@ -1,4 +1,5 @@
 function Get-AppRegistrationSecurityState {
+    # TODO: add way to authenticate via Key or Secret...
     [CmdletBinding()]
     param (
         [switch]$Advices,
