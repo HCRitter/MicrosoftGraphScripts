@@ -17,7 +17,7 @@ function Get-AppRegistrationSecurityState {
                 return
             }
         }
-        $AppRoles = (Get-MgServicePrincipal -All | Where-Object AppId -eq '00000003-0000-0000-c000-000000000000').AppRoles
+        $AppRoles = (Get-MgServicePrincipalByAppId -AppId '00000003-0000-0000-c000-000000000000').AppRoles
     }
     
     process {
